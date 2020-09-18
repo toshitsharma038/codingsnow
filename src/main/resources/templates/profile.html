@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+
+    <title>Sidebar Dashboard Template With Sub Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+    <title>profile</title>
+</head>
+<body>
+<!--wrapper start-->
+<div class="wrapper">
+    <!--header menu start-->
+    <div class="header">
+        <div class="header-menu">
+            <div class="title">Coding <span>Snow</span></div>
+            <div class="sidebar-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--header menu end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <center class="profile">
+                <img th:src="@{/images/1.jpg}"
+                     src="../images/1.jpg" class="img-responsive" alt="Responsive image"/>
+                <p>Toshit</p>
+            </center>
+
+            <li class="item">
+                <a href="./home" class="menu-btn">
+                    <i class="fas fa-desktop"></i><span>Dashboard</span>
+                </a>
+            </li>
+
+
+            <li class="item" id="profile">
+                <a href="./profile" class="menu-btn">
+                    <i class="fas fa-user-circle"></i><span>Profile <i class="fas fa-chevron-down drop-down"></i></span>
+                </a>
+            </li>
+            <li class="item" id="settings">
+                <a href="./setting" class="menu-btn">
+                    <i class="fas fa-cog"></i><span>Setting <i class="fas fa-chevron-down drop-down"></i></span>
+                </a>
+
+            </li>
+            <li class="item">
+                <a href="./about" class="menu-btn">
+                    <i class="fas fa-info-circle"></i><span>About</span>
+                </a>
+            </li>
+        </div>
+    </div>
+    <!--sidebar end-->
+
+    <div class="card">
+        <img src="img.jpg" alt="John" style="width:100%">
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <p><button>Contact</button></p>
+    </div>
+
+
+    <!--main container end-->
+</div>
+<!--wrapper end-->
+
+
+
+
+
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+            <div class="well profile">
+                <div class="col-sm-12">
+                    <div class="col-xs-12 col-sm-8">
+                        <h2>Toshit kumar</h2>
+                        <p><strong>About: </strong> Web Designer / UI. </p>
+                        <p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
+                        <p><strong>Skills: </strong>
+                            <span class="tags">html5</span>
+                            <span class="tags">css3</span>
+                            <span class="tags">jquery</span>
+                            <span class="tags">bootstrap3</span>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-center">
+                        <figure>
+                            <img src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png" alt="" class="img-circle img-responsive">
+                            <figcaption class="ratings">
+                                <p>Ratings
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-star-o"></span>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 divider text-center">
+                    <div class="col-xs-12 col-sm-4 emphasis">
+                        <h2><strong> 20,7K </strong></h2>
+                        <p><small>Followers</small></p>
+                        <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 emphasis">
+                        <h2><strong>245</strong></h2>
+                        <p><small>Following</small></p>
+                        <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 emphasis">
+                        <h2><strong>43</strong></h2>
+                        <p><small>Snippets</small></p>
+                        <div class="btn-group dropup btn-block">
+                            <button type="button" class="btn btn-primary"><span class="fa fa-gear"></span> Options </button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a href="#"><span class="fa fa-envelope pull-right"></span> Send an email </a></li>
+                                <li><a href="#"><span class="fa fa-list pull-right"></span> Add or remove from a list  </a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><span class="fa fa-warning pull-right"></span>Report this user for spam</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" class="btn disabled" role="button"> Unfollow </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+        </script>
+
+</body>
+</html>
